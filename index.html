@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html lang="en" background-image="./bluebackground.jpg">
   <head>
-    <title>Who am I?</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-      rel="stylesheet" href="index.css">
-    <!-- favicon-->
-    <link rel="icon" type="image/x-icon" href="S.png">
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+      }
+      
+      li {
+        float: left;
+      }
+      
+      li a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        background-color: skyblue;
+      }
+      
+      
+    .header {
+      background-image: "./bluebackground.jpg";
+      padding: 20px;
+      text-align: center;
+    }
 
-    <!--script for bootstrap below-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- scripts for react below-->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
     
   </head>
 <style>
@@ -27,12 +66,36 @@
   }
   </style>
 
-    <div class="container mt-3">
-      <button onclick="document.getElementById('demo').innerHTML=Date()">What time is it?</button>
+  <div class ="header">
+    <h1>Header</h1>
+    </div>
 
-      <p id="demo"></p>
-    <a href="https://www.linkedin.com/in/jameswirth1/" button type="button" class="btn btn-outline-primary">My LinkedIn</a>
-    <a href="https://github.com/jwirth1" button type="button" class="btn btn-outline-primary">My Github</a>
+    <div class ="topnav">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Contact</a>
+    </div>
+
+  <title>Who am I?</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" href="index.css">
+  <!-- favicon-->
+  <link rel="icon" type="image/x-icon" href="S.png">
+
+  <!--script for bootstrap below-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- scripts for react below-->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  
+
+    <a id=linkedIn href="https://www.linkedin.com/in/jameswirth1/" button type="button" class="btn btn-outline-primary">My LinkedIn</a>
+    <a id=Github href="https://github.com/jwirth1" button type="button" class="btn btn-outline-primary">My Github</a>
 
     
 
