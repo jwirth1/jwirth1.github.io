@@ -1,5 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" background-image="./bluebackground.jpg">
+  <title>Who am I?</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+    rel="stylesheet" href="index.css">
+  <!-- favicon-->
+  <link rel="icon" type="image/x-icon" href="S.png">
+
+  <!--script for bootstrap below-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- scripts for react below-->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  
   <head>
     <style>
       ul {
@@ -54,6 +69,28 @@
   background-color: #ddd;
   color: black;
 }
+
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  text-align: center;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
 </style>
     
   </head>
@@ -67,39 +104,36 @@
   </style>
 
   <div class ="header">
-    <h1>Header</h1>
+    <h1>Welcome to my website about me!</h1>
     </div>
 
     <div class ="topnav">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
+      <a href="https://www.linkedin.com/in/jameswirth1/">LinkedIn</a>
+      <a href="https://github.com/jwirth1">GitHub</a>
       <a href="#">Contact</a>
     </div>
 
-  <title>Who am I?</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
-    rel="stylesheet" href="index.css">
-  <!-- favicon-->
-  <link rel="icon" type="image/x-icon" href="S.png">
+ 
 
-  <!--script for bootstrap below-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- scripts for react below-->
-  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  
-  
-
-    <a id=linkedIn href="https://www.linkedin.com/in/jameswirth1/" button type="button" class="btn btn-outline-primary">My LinkedIn</a>
-    <a id=Github href="https://github.com/jwirth1" button type="button" class="btn btn-outline-primary">My Github</a>
+  <div class="row">
+    <div class="column">
+      <h2>Who I Am</h2>
+      <p>My name is James Wirth and I created this website from scratch.  What you're looking at used to be a big blank white box.  With a little bit of effort and passion, I managed to create some cool stuff.</p>
+    </div>
+    
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+      <img src="./me.jpg" alt="Me all professional :)">
+    </div>
+    
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+  </div>
 
     
-
-    <img src="./me.jpg" alt="Me all professional :)">
     <form action="mailto: jwirth1@uncc.edu" method="post" enctype="text/plain">
       Name:<br>
       <input type="text" name="name"><br>
