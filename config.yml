@@ -1,2 +1,5 @@
 #Creation of file
 theme: hacker
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://jwirth1.github.io"
