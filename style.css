@@ -77,6 +77,10 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:#ff004f;
 }
+.learn-more {
+    font-size: 20px;
+    text-align: center;
+}
 /* ------about------- */
 #about {
     padding: 80px 0;;
