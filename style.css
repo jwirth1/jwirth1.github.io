@@ -32,7 +32,10 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 60px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 nav ul li{
