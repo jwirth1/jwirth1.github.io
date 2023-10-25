@@ -22,12 +22,10 @@ To view my portfolio, you can simply visit the [GitHub Pages](https://jwirth1.gi
 If you'd like to run this portfolio locally, follow these steps:
 
 1. Clone this repository:
-   ```bash
-https://github.com/jwirth1/jwirth1.github.io.git
+   ```bash https://github.com/jwirth1/jwirth1.github.io.git```
 
 2. Navigate to the project folder:
-   ```bash
-cd jwirth1.github.io
+   ```bash cd jwirth1.github.io```
 
 3. Download Live Server from VSCode Extensions and clicks Live Server in bottom right of IDE.
 
