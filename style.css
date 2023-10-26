@@ -84,7 +84,6 @@ nav ul li a:hover::after{
 #about {
     padding: 80px 0;;
     color: #ffffff;
-
 }
 
 .row{
@@ -92,6 +91,10 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 
+}
+.about{
+    /* background: linear-gradient(#564d4d, #515368);} */
+    background: radial-gradient(ellipse at bottom, #3e4142, transparent);
 }
 
 .about-col-1{
@@ -105,6 +108,7 @@ border-radius: 15px;
 
 .about-col-2{
     flex-basis: 60%;
+    font-family: Helvetica, sans-serif
 }
 
 .sub-title{
@@ -419,6 +423,37 @@ nav .fa-solid{
     .copyright{
         font-size: 14px;
     }
+    .center {
+        background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+        background-size: cover;
+    
+        /* Adjust the animation duration for smaller screens */
+        -webkit-animation: slidein-smaller 50s; /* New animation duration */
+        animation: slidein-smaller 50s; /* New animation duration */
+      }
+    
+      /* Define the animation keyframes with the adjusted duration */
+      @-webkit-keyframes slidein-smaller {
+        from {
+          background-position: top;
+          background-size: 3000px;
+        }
+        to {
+          background-position: -100px 0px;
+          background-size: 2750px;
+        }
+      }
+    
+      @keyframes slidein-smaller {
+        from {
+          background-position: top;
+          background-size: 3000px;
+        }
+        to {
+          background-position: -100px 0px;
+          background-size: 2750px;
+        }
+      }
 }
 #msg{
     color: #61b752;
@@ -431,8 +466,8 @@ nav .fa-solid{
 .center  {
     background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
   background-size:cover;
-        -webkit-animation: slidein 100s;
-        animation: slidein 100s;
+        -webkit-animation: slidein 25s;
+        animation: slidein 25s linear;
 
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
