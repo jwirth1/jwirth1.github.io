@@ -83,7 +83,7 @@ nav ul li a:hover::after{
 /* ------about------- */
 #about {
     padding: 80px 0;;
-    color: #ababab;
+    color: #ffffff;
 
 }
 
@@ -139,7 +139,7 @@ border-radius: 15px;
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
